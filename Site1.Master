@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ProjCovid19.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 302px;
+        }
+
+        .auto-style2 {
+            width: 112px;
+        }
+
+        .borderStyle1 {
+            border-style: solid;
+            border-width: medium;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <table style="width: 100%;">
+            <tr>
+                <td class="auto-style1">COVID-19</td>
+                <td class="auto-style2">
+                    <asp:HyperLink ID="Home" runat="server" NavigateUrl="Home.aspx">Home</asp:HyperLink> </td>
+                <td class="auto-style2"> <asp:HyperLink ID="Covid19" runat="server" 
+                    NavigateUrl="Covid-19.aspx">COVID-19</asp:HyperLink></td>
+                <td class="auto-style2"><asp:HyperLink ID="Prevention" runat="server" 
+                    NavigateUrl="Prevention.aspx">Prevention</asp:HyperLink> </td>
+                <td class="auto-style2"><asp:HyperLink ID="Video" runat="server" NavigateUrl="Video.aspx">Video</asp:HyperLink></td>
+                <td class="auto-style2"><asp:HyperLink ID="Statistics" 
+                    runat="server" NavigateUrl="Statistics.aspx">Statistics</asp:HyperLink> </td>
+                <td class="auto-style2"><asp:HyperLink ID="Advise" 
+                    runat="server" NavigateUrl="Advise.aspx">Advise</asp:HyperLink></td>
+                <td class="auto-style2"><asp:HyperLink ID="AboutUs" 
+                    runat="server" NavigateUrl="AboutUs.aspx">About Us</asp:HyperLink></td>
+            </tr>
+        </table>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
